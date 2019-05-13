@@ -71,6 +71,7 @@ export default {
     this.$emit('on_click')
   },
   mounted () {
+    plumbIns.repaintEverything()
     let plumbIns = jsPlumb.getInstance()
     let defaultConfig = {
       // 对应基本概念
