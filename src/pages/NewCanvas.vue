@@ -71,8 +71,8 @@ export default {
     this.$emit('on_click')
   },
   mounted () {
-    plumbIns.repaintEverything()
     let plumbIns = jsPlumb.getInstance()
+    plumbIns.repaintEverything()
     let defaultConfig = {
       // 对应基本概念
       anchor: ['Left', 'Right', 'Top', 'Bottom', [0.3, 0, 0, -1], [0.7, 0, 0, -1], [0.3, 1, 0, 1], [0.7, 1, 0, 1]],
